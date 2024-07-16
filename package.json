@@ -1,0 +1,27 @@
+{
+  "name": "dashboard-api",
+  "version": "1.0.0",
+  "description": "layer architecture",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "layer",
+    "architecture"
+  ],
+  "author": "Ilya Romanyuk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inversify": "^6.0.2",
+    "reflect-metadata": "^0.2.2",
+    "tslog": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
