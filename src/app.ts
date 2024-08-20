@@ -49,5 +49,10 @@ export class App {
 		await this.prismaService.connect();
 		this.server = this.app.listen(this.port);
 		this.logger.log(`Сервер запущен на http://localhost:${this.port}`);
+		this.logger.log(this.configService.get('DATABASE_URL'));
+	}
+
+	public close(): void {
+		this.server.close();
 	}
 }
